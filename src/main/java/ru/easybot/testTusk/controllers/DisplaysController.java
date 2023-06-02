@@ -68,6 +68,7 @@ public class DisplaysController {
      */
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ApiResponse> saveDisplay(@RequestBody @Valid Display display, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new DisplayNotCreatedException(ExceptionFiller.enrichErrorMessage(bindingResult));

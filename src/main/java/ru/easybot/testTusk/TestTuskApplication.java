@@ -9,5 +9,4 @@ public class TestTuskApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TestTuskApplication.class, args);
 	}
-
 }

@@ -68,6 +68,7 @@ public class LaptopsController {
      */
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ApiResponse> saveLaptop(@RequestBody @Valid Laptop laptop, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new LaptopNotCreatedException(ExceptionFiller.enrichErrorMessage(bindingResult));

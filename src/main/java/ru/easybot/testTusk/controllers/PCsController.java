@@ -59,15 +59,16 @@ public class PCsController {
     /**
      * Метод сохраняет ПК в БД и возвращает его в ответе.
      * json для проверки: {
-     *     "serialNumber": "143579050001015400CA",
-     *     "vendor": "PLEXTOR",
-     *     "price": 5600.00,
-     *     "quantity": 5,
+     *     "serialNumber": "a1fa2fc2-0194-11ee-be56-0242ac120002",
+     *     "vendor": "Intel",
+     *     "price": 250800.00,
+     *     "quantity": 2,
      *     "formFactor": "display"
      * }
      */
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ApiResponse> savePC(@RequestBody @Valid PC pc, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new PCNotCreatedException(ExceptionFiller.enrichErrorMessage(bindingResult));
@@ -80,11 +81,11 @@ public class PCsController {
     /**
      * Метод редактирует существующий ПК по id переданному в пути запроса
      * json для проверки: {
-     *     "serialNumber": "WD-WCAY01763080",
-     *     "vendor": "Western Digital",
-     *     "price": 2600.00,
-     *     "quantity": 2,
-     *     "capacity": 256
+     *     "serialNumber": "a1fa2fc2-0194-11ee-be56-0242ac120002",
+     *     "vendor": "Gigabyte",
+     *     "price": 82600.00,
+     *     "quantity": 12,
+     *     "formFactor": "monoblock"
      * }
      */
 

@@ -9,5 +9,4 @@ class TestTuskApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

@@ -68,6 +68,7 @@ public class HardDisksController {
      */
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ApiResponse> saveHardDisk(@RequestBody @Valid HardDisk hardDisk, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new HardDiskNotCreatedException(ExceptionFiller.enrichErrorMessage(bindingResult));
