@@ -1,0 +1,513 @@
+openapi: 3.0.3
+info:
+  title: Easy Bot restAPI - Test Tusk
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+  - url: https://localhost:8080/
+tags:
+  - name: PCs
+    description: Операции с ПК
+  - name: laptops
+    description: Операции с ноутбуками
+  - name: hard-disks
+    description: Операции с жесткими дисками
+  - name: displays
+    description: Операции с мониторами
+paths:
+  /PCs:
+    get:
+      tags:
+        - PCs
+      summary: Информация о всех компьютерах
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    post:
+      tags:
+        - PCs
+      summary: Сохранить новый компьютер
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PC'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /PC/{id}:
+    get:
+      tags:
+        - PCs
+      summary: Информация о выбранном пк
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PC'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    patch:
+      tags:
+        - PCs
+      summary: Изменить данные о существующем ПК
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PC'
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /laptops:
+    get:
+      tags:
+        - laptops
+      summary: Информация о всех ноутбуках
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    post:
+      tags:
+        - laptops
+      summary: Сохранить новый ноутбук
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PC'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /Laptops/{id}:
+    get:
+      tags:
+        - laptops
+      summary: Информация о выбранном ноутбуке
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Laptop'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    patch:
+      tags:
+        - laptops
+      summary: Изменить данные о существующем ноутбуке
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Laptop'
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'  
+  /hardDisks:
+    get:
+      tags:
+        - hard-disks
+      summary: Информация о всех жестких дисках
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    post:
+      tags:
+        - hard-disks
+      summary: Сохранить новый жесткий диск
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/HardDisk'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /hardDisks/{id}:
+    get:
+      tags:
+        - hard-disks
+      summary: Информация о выбранном жестком диске
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HardDisk'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    patch:
+      tags:
+        - hard-disks
+      summary: Изменить данные о существующем жестком диске
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/HardDisk'
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /displays:
+    get:
+      tags:
+        - displays
+      summary: Информация о всех мониторах
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    post:
+      tags:
+        - displays
+      summary: Сохранить новый монитор
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Display'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /displays/{id}:
+    get:
+      tags:
+        - displays
+      summary: Информация о выбранном мониторе
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Display'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    patch:
+      tags:
+        - displays
+      summary: Изменить данные о существующем мониторе
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Display'
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+components:
+  schemas:
+    PC:
+      required:
+        - serialNumber
+        - vendor
+        - price
+        - quantity
+        - formFactor
+      type: object
+      properties:
+        serialNumber:
+          type: string
+          example: 3696b4fa-016f-11ee-be56-0242ac120002
+        vendor:
+          type: string
+          example: Apple
+        price:
+          type: integer
+          format: int64
+          example: 164200.00
+        quantity:
+          type: integer
+          format: int64
+          example: 12
+        formFactor:
+          type: string
+          example: desktop
+    Laptop:
+      required:
+        - serialNumber
+        - vendor
+        - price
+        - quantity
+        - formFactor
+      type: object
+      properties:
+        serialNumber:
+          type: string
+          example: 3696b4fa-016f-11ee-be56-0242ac120002
+        vendor:
+          type: string
+          example: Apple
+        price:
+          type: integer
+          format: int64
+          example: 164200.00
+        quantity:
+          type: integer
+          format: int64
+          example: 12
+        laptopSize:
+          type: string
+          example: 17in
+    Display:
+      required:
+        - serialNumber
+        - vendor
+        - price
+        - quantity
+        - formFactor
+      type: object
+      properties:
+        serialNumber:
+          type: string
+          example: 3696b4fa-016f-11ee-be56-0242ac120002
+        vendor:
+          type: string
+          example: Apple
+        price:
+          type: integer
+          format: int64
+          example: 164200.00
+        quantity:
+          type: integer
+          format: int64
+          example: 12
+        diagonal:
+          type: integer
+          format: int64
+          example: 27
+    HardDisk:
+      required:
+        - serialNumber
+        - vendor
+        - price
+        - quantity
+        - formFactor
+      type: object
+      properties:
+        serialNumber:
+          type: string
+          example: 3696b4fa-016f-11ee-be56-0242ac120002
+        vendor:
+          type: string
+          example: Apple
+        price:
+          type: integer
+          format: int64
+          example: 164200.00
+        quantity:
+          type: integer
+          format: int64
+          example: 12
+        capacity:
+          type: integer
+          format: int64
+          example: 512
+    ApiResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: Идентификатор ошибки.
+          example: "XXX CODE_DEFINITION"
+        message:
+          type: string
+          description: Описание ответа
+          example: "Response message"
+        result:
+          type: object
+          properties:
+            resource:
+              type: string
+              description: "Ресурс"
+              example: "Some API resource"

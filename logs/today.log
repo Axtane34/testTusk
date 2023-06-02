@@ -1,0 +1,773 @@
+02-06-2023 18:21:41.314 INFO [background-preinit] [org.hibernate.validator.internal.util.Version.<clinit>(Version.java:21)] - HV000001: Hibernate Validator 6.2.5.Final
+02-06-2023 18:21:41.353 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting TestTuskApplication using Java 17.0.2 on DESKTOP-QSKBT08 with PID 3528 (D:\IdeaProjects\testTusk\target\classes started by Axtan in D:\IdeaProjects\testTusk)
+02-06-2023 18:21:41.359 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:631)] - No active profile set, falling back to 1 default profile: "default"
+02-06-2023 18:21:42.040 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-06-2023 18:21:42.129 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] - Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+02-06-2023 18:21:42.553 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)] - Tomcat initialized with port(s): 8080 (http)
+02-06-2023 18:21:42.565 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing ProtocolHandler ["http-nio-8080"]
+02-06-2023 18:21:42.566 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting service [Tomcat]
+02-06-2023 18:21:42.566 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+02-06-2023 18:21:42.651 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring embedded WebApplicationContext
+02-06-2023 18:21:42.651 INFO [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] - Root WebApplicationContext: initialization completed in 1242 ms
+02-06-2023 18:21:42.675 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)] - res1 - Starting...
+02-06-2023 18:21:42.780 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)] - res1 - Start completed.
+02-06-2023 18:21:42.791 INFO [main] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:98)] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testTuskDB'
+02-06-2023 18:21:42.885 INFO [main] [org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-06-2023 18:21:42.931 INFO [main] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.15.Final
+02-06-2023 18:21:43.034 INFO [main] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-06-2023 18:21:43.120 INFO [main] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-06-2023 18:21:43.573 INFO [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-06-2023 18:21:43.580 INFO [main] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 18:21:43.621 WARN [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-06-2023 18:21:44.064 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting ProtocolHandler ["http-nio-8080"]
+02-06-2023 18:21:44.079 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)] - Tomcat started on port(s): 8080 (http) with context path ''
+02-06-2023 18:21:44.087 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started TestTuskApplication in 3.235 seconds (JVM running for 4.582)
+02-06-2023 18:23:26.652 INFO [SpringApplicationShutdownHook] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:651)] - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 18:23:26.655 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350)] - res1 - Shutdown initiated...
+02-06-2023 18:23:26.658 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352)] - res1 - Shutdown completed.
+02-06-2023 18:23:32.651 INFO [background-preinit] [org.hibernate.validator.internal.util.Version.<clinit>(Version.java:21)] - HV000001: Hibernate Validator 6.2.5.Final
+02-06-2023 18:23:32.683 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting TestTuskApplication using Java 17.0.2 on DESKTOP-QSKBT08 with PID 4540 (D:\IdeaProjects\testTusk\target\classes started by Axtan in D:\IdeaProjects\testTusk)
+02-06-2023 18:23:32.688 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:631)] - No active profile set, falling back to 1 default profile: "default"
+02-06-2023 18:23:33.311 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-06-2023 18:23:33.380 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+02-06-2023 18:23:33.778 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)] - Tomcat initialized with port(s): 8080 (http)
+02-06-2023 18:23:33.791 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing ProtocolHandler ["http-nio-8080"]
+02-06-2023 18:23:33.791 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting service [Tomcat]
+02-06-2023 18:23:33.792 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+02-06-2023 18:23:33.880 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring embedded WebApplicationContext
+02-06-2023 18:23:33.880 INFO [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] - Root WebApplicationContext: initialization completed in 1135 ms
+02-06-2023 18:23:33.905 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)] - first - Starting...
+02-06-2023 18:23:34.033 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)] - first - Start completed.
+02-06-2023 18:23:34.043 INFO [main] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:98)] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testTuskDB'
+02-06-2023 18:23:34.136 INFO [main] [org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-06-2023 18:23:34.183 INFO [main] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.15.Final
+02-06-2023 18:23:34.300 INFO [main] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-06-2023 18:23:34.404 INFO [main] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-06-2023 18:23:34.949 INFO [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-06-2023 18:23:34.961 INFO [main] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 18:23:35.036 WARN [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-06-2023 18:23:35.702 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting ProtocolHandler ["http-nio-8080"]
+02-06-2023 18:23:35.725 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)] - Tomcat started on port(s): 8080 (http) with context path ''
+02-06-2023 18:23:35.739 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started TestTuskApplication in 3.7 seconds (JVM running for 5.38)
+02-06-2023 18:25:54.145 INFO [SpringApplicationShutdownHook] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:651)] - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 18:25:54.147 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350)] - first - Shutdown initiated...
+02-06-2023 18:25:54.149 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352)] - first - Shutdown completed.
+02-06-2023 19:59:47.564 INFO [background-preinit] [org.hibernate.validator.internal.util.Version.<clinit>(Version.java:21)] - HV000001: Hibernate Validator 6.2.5.Final
+02-06-2023 19:59:47.624 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting TestTuskApplication using Java 17.0.2 on DESKTOP-QSKBT08 with PID 3276 (D:\IdeaProjects\testTusk\target\classes started by Axtan in D:\IdeaProjects\testTusk)
+02-06-2023 19:59:47.630 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:631)] - No active profile set, falling back to 1 default profile: "default"
+02-06-2023 19:59:48.712 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-06-2023 19:59:48.817 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] - Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+02-06-2023 19:59:49.464 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)] - Tomcat initialized with port(s): 8080 (http)
+02-06-2023 19:59:49.483 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing ProtocolHandler ["http-nio-8080"]
+02-06-2023 19:59:49.484 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting service [Tomcat]
+02-06-2023 19:59:49.485 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+02-06-2023 19:59:49.638 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring embedded WebApplicationContext
+02-06-2023 19:59:49.638 INFO [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] - Root WebApplicationContext: initialization completed in 1946 ms
+02-06-2023 19:59:49.678 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)] - first - Starting...
+02-06-2023 19:59:49.846 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)] - first - Start completed.
+02-06-2023 19:59:49.864 INFO [main] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:98)] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testTuskDB'
+02-06-2023 19:59:50.038 INFO [main] [org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-06-2023 19:59:50.125 INFO [main] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.15.Final
+02-06-2023 19:59:50.292 INFO [main] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-06-2023 19:59:50.426 INFO [main] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-06-2023 19:59:51.198 INFO [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-06-2023 19:59:51.210 INFO [main] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 19:59:51.697 WARN [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-06-2023 19:59:52.110 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting ProtocolHandler ["http-nio-8080"]
+02-06-2023 19:59:52.138 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)] - Tomcat started on port(s): 8080 (http) with context path ''
+02-06-2023 19:59:52.152 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started TestTuskApplication in 5.115 seconds (JVM running for 6.598)
+02-06-2023 20:00:42.646 INFO [http-nio-8080-exec-2] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-06-2023 20:00:42.646 INFO [http-nio-8080-exec-2] [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)] - Initializing Servlet 'dispatcherServlet'
+02-06-2023 20:00:42.647 INFO [http-nio-8080-exec-2] [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)] - Completed initialization in 1 ms
+02-06-2023 20:00:42.655 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /displays
+headers:
+request body:
+nothing
+02-06-2023 20:00:42.847 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.controllers.DisplaysController.getAllDisplays(DisplaysController.java:40)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete, but result list of Displays is empty",
+"result":[
+
+]
+}
+02-06-2023 20:04:55.997 INFO [http-nio-8080-exec-5] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /displays
+headers:
+request body:
+"serialNumber": "MONITOR\PHL0904\{
+4d36e96e-e325-11ce-bfc1-08002be10318
+}\0007",
+"producer": "Philips",
+"price": 25600.00,
+"quantity": 25,
+"diagonal": 32
+02-06-2023 20:06:32.440 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /displays
+headers:
+request body:
+{
+"serialNumber": "4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer": "Philips",
+"price": 25600.00,
+"quantity": 25,
+"diagonal": 32
+}
+02-06-2023 20:06:32.519 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.controllers.DisplaysController.saveDisplay(DisplaysController.java:57)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer":"Philips",
+"price":25600.00,
+"quantity":25,
+"diagonal":32
+}
+}
+02-06-2023 20:06:51.157 INFO [http-nio-8080-exec-8] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /displays
+headers:
+request body:
+{
+"serialNumber": "4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer": "Philips",
+"price": -25600.00,
+"quantity": 25,
+"diagonal": 32
+}
+02-06-2023 20:06:51.169 ERROR [http-nio-8080-exec-8] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:175)] - 
+response: {
+"status":"400 BAD_REQUEST",
+"message":"saveDisplay.display.price: price should be greater then 0",
+"result":{
+"line":"MethodValidationInterceptor: invoke: 120",
+"exception":"ConstraintViolationException"
+}
+}
+02-06-2023 20:07:36.450 INFO [http-nio-8080-exec-10] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /displays/1
+headers:
+request body:
+nothing
+02-06-2023 20:07:36.469 INFO [http-nio-8080-exec-10] [ru.easybot.testTusk.controllers.DisplaysController.getDisplayById(DisplaysController.java:47)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer":"Philips",
+"price":25600.00,
+"quantity":25,
+"diagonal":32
+}
+}
+02-06-2023 20:07:52.998 INFO [http-nio-8080-exec-1] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /displays
+headers:
+request body:
+nothing
+02-06-2023 20:07:53.002 INFO [http-nio-8080-exec-1] [ru.easybot.testTusk.controllers.DisplaysController.getAllDisplays(DisplaysController.java:40)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":[
+{
+"id":1,
+"serialNumber":"4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer":"Philips",
+"price":25600.00,
+"quantity":25,
+"diagonal":32
+}
+]
+}
+02-06-2023 20:10:53.356 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /displays/1
+headers:
+request body:
+{
+"serialNumber": "4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer": "LG",
+"price": 25600.00,
+"quantity": 25,
+"diagonal": 32
+}
+02-06-2023 20:10:53.376 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.controllers.DisplaysController.updateDisplayById(DisplaysController.java:70)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer":"LG",
+"price":25600.00,
+"quantity":25,
+"diagonal":32
+}
+}
+02-06-2023 20:11:00.505 INFO [http-nio-8080-exec-5] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /displays/1
+headers:
+request body:
+{
+"serialNumber": "4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer": "LG",
+"price": -25600.00,
+"quantity": 25,
+"diagonal": 32
+}
+02-06-2023 20:11:00.510 ERROR [http-nio-8080-exec-5] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:175)] - 
+response: {
+"status":"400 BAD_REQUEST",
+"message":"updateDisplayById.display.price: price should be greater then 0",
+"result":{
+"line":"MethodValidationInterceptor: invoke: 120",
+"exception":"ConstraintViolationException"
+}
+}
+02-06-2023 20:11:17.201 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /displays/1
+headers:
+request body:
+{
+"serialNumber": "4d36e96e-e325-11ce-bfc1-08002be103180007",
+"producer": "LG",
+"price": 25600.00,
+"quantity": -25,
+"diagonal": 32
+}
+02-06-2023 20:11:17.204 ERROR [http-nio-8080-exec-6] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:175)] - 
+response: {
+"status":"400 BAD_REQUEST",
+"message":"updateDisplayById.display.quantity: quantity should be greater then 0",
+"result":{
+"line":"MethodValidationInterceptor: invoke: 120",
+"exception":"ConstraintViolationException"
+}
+}
+02-06-2023 20:15:38.338 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /hardDisks
+headers:
+request body:
+nothing
+02-06-2023 20:15:38.353 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.controllers.HardDisksController.getAllHardDisks(HardDisksController.java:40)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete, but result list of hard disks is empty",
+"result":[
+
+]
+}
+02-06-2023 20:18:31.215 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /hardDisks
+headers:
+request body:
+{
+"serialNumber": "143579050001015400CA",
+"producer": "PLEXTOR",
+"price": 5600.00,
+"quantity": 5,
+"capacity": 512
+}
+02-06-2023 20:18:31.227 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.controllers.HardDisksController.saveHardDisk(HardDisksController.java:57)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"143579050001015400CA",
+"producer":"PLEXTOR",
+"price":5600.00,
+"quantity":5,
+"capacity":512
+}
+}
+02-06-2023 20:20:18.353 INFO [http-nio-8080-exec-5] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /hardDisks/1
+headers:
+request body:
+{
+"serialNumber": "WD-WCAY01763080",
+"producer": "Western Digital",
+"price": 2600.00,
+"quantity": 2,
+"capacity": 256
+}
+02-06-2023 20:20:18.361 INFO [http-nio-8080-exec-5] [ru.easybot.testTusk.controllers.HardDisksController.updateHardDiskById(HardDisksController.java:70)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"WD-WCAY01763080",
+"producer":"Western Digital",
+"price":2600.00,
+"quantity":2,
+"capacity":256
+}
+}
+02-06-2023 20:24:34.241 INFO [http-nio-8080-exec-8] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /laptops/1
+headers:
+request body:
+nothing
+02-06-2023 20:24:34.252 ERROR [http-nio-8080-exec-8] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:65)] - 
+response: {
+"status":"404 NOT_FOUND",
+"message":"Laptop with this id not represented in database yet",
+"result":{
+"line":"LaptopsServiceImpl: lambda$findLaptopById$0: 52",
+"exception":"LaptopNotFoundException"
+}
+}
+02-06-2023 20:24:37.693 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /laptops
+headers:
+request body:
+nothing
+02-06-2023 20:24:37.697 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.controllers.LaptopsController.getAllLaptops(LaptopsController.java:40)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete, but result list of Laptops is empty",
+"result":[
+
+]
+}
+02-06-2023 20:24:43.366 INFO [http-nio-8080-exec-10] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "WD-WCAY01763080",
+"producer": "Western Digital",
+"price": 2600.00,
+"quantity": 2,
+"size": 13
+}
+02-06-2023 20:24:43.368 WARN [http-nio-8080-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler.handleHttpRequestMethodNotSupported(ResponseEntityExceptionHandler.java:209)] - Request method 'PATCH' not supported
+02-06-2023 20:25:01.314 INFO [http-nio-8080-exec-1] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "WD-WCAY01763080",
+"producer": "Western Digital",
+"price": 2600.00,
+"quantity": 2,
+"size": 13
+}
+02-06-2023 20:25:01.334 INFO [http-nio-8080-exec-1] [ru.easybot.testTusk.controllers.LaptopsController.saveLaptop(LaptopsController.java:57)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"WD-WCAY01763080",
+"producer":"Western Digital",
+"price":2600.00,
+"quantity":2,
+"laptopSize":null
+}
+}
+02-06-2023 20:26:47.933 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": 13
+}
+02-06-2023 20:26:57.191 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "L"
+}
+02-06-2023 20:26:57.196 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.controllers.LaptopsController.saveLaptop(LaptopsController.java:57)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":2,
+"serialNumber":"BCG0035YMN",
+"producer":"HP",
+"price":22600.00,
+"quantity":15,
+"laptopSize":"L"
+}
+}
+02-06-2023 20:27:16.294 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "13"
+}
+02-06-2023 20:27:19.517 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": 13
+}
+02-06-2023 20:27:22.962 INFO [http-nio-8080-exec-1] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": 15
+}
+02-06-2023 20:29:42.495 INFO [http-nio-8080-exec-3] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "l"
+}
+02-06-2023 20:29:47.981 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "L"
+}
+02-06-2023 20:29:47.986 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.controllers.LaptopsController.saveLaptop(LaptopsController.java:57)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":3,
+"serialNumber":"BCG0035YMN",
+"producer":"HP",
+"price":22600.00,
+"quantity":15,
+"laptopSize":"L"
+}
+}
+02-06-2023 20:30:01.350 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /laptops/3
+headers:
+request body:
+nothing
+02-06-2023 20:30:01.355 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.controllers.LaptopsController.getLaptopById(LaptopsController.java:47)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":3,
+"serialNumber":"BCG0035YMN",
+"producer":"HP",
+"price":22600.00,
+"quantity":15,
+"laptopSize":"L"
+}
+}
+02-06-2023 20:49:49.112 INFO [SpringApplicationShutdownHook] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:651)] - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 20:49:49.114 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350)] - first - Shutdown initiated...
+02-06-2023 20:49:49.116 INFO [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352)] - first - Shutdown completed.
+02-06-2023 20:49:55.571 INFO [background-preinit] [org.hibernate.validator.internal.util.Version.<clinit>(Version.java:21)] - HV000001: Hibernate Validator 6.2.5.Final
+02-06-2023 20:49:55.609 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting TestTuskApplication using Java 17.0.2 on DESKTOP-QSKBT08 with PID 3900 (D:\IdeaProjects\testTusk\target\classes started by Axtan in D:\IdeaProjects\testTusk)
+02-06-2023 20:49:55.618 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:631)] - No active profile set, falling back to 1 default profile: "default"
+02-06-2023 20:49:56.224 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-06-2023 20:49:56.297 INFO [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] - Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+02-06-2023 20:49:56.674 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)] - Tomcat initialized with port(s): 8080 (http)
+02-06-2023 20:49:56.688 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing ProtocolHandler ["http-nio-8080"]
+02-06-2023 20:49:56.688 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting service [Tomcat]
+02-06-2023 20:49:56.689 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+02-06-2023 20:49:56.774 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring embedded WebApplicationContext
+02-06-2023 20:49:56.774 INFO [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] - Root WebApplicationContext: initialization completed in 1096 ms
+02-06-2023 20:49:56.800 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)] - first - Starting...
+02-06-2023 20:49:56.902 INFO [main] [com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)] - first - Start completed.
+02-06-2023 20:49:56.911 INFO [main] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:98)] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testTuskDB'
+02-06-2023 20:49:57.004 INFO [main] [org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-06-2023 20:49:57.055 INFO [main] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.15.Final
+02-06-2023 20:49:57.171 INFO [main] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-06-2023 20:49:57.256 INFO [main] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-06-2023 20:49:57.732 INFO [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-06-2023 20:49:57.740 INFO [main] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-06-2023 20:49:58.051 WARN [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-06-2023 20:49:58.257 INFO [main] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Starting ProtocolHandler ["http-nio-8080"]
+02-06-2023 20:49:58.273 INFO [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)] - Tomcat started on port(s): 8080 (http) with context path ''
+02-06-2023 20:49:58.287 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started TestTuskApplication in 3.054 seconds (JVM running for 3.856)
+02-06-2023 20:50:16.427 INFO [http-nio-8080-exec-2] [org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-06-2023 20:50:16.427 INFO [http-nio-8080-exec-2] [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)] - Initializing Servlet 'dispatcherServlet'
+02-06-2023 20:50:16.428 INFO [http-nio-8080-exec-2] [org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)] - Completed initialization in 0 ms
+02-06-2023 20:50:16.436 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"producer": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "13in"
+}
+02-06-2023 20:50:16.582 ERROR [http-nio-8080-exec-2] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:175)] - 
+response: {
+"status":"400 BAD_REQUEST",
+"message":"saveLaptop.laptop.vendor: product should contain vendor",
+"result":{
+"exception":"ConstraintViolationException",
+"line":"MethodValidationInterceptor: invoke: 120"
+}
+}
+02-06-2023 20:50:26.943 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /laptops
+headers:
+request body:
+{
+"serialNumber": "BCG0035YMN",
+"vendor": "HP",
+"price": 22600.00,
+"quantity": 15,
+"laptopSize": "13in"
+}
+02-06-2023 20:50:27.005 INFO [http-nio-8080-exec-4] [ru.easybot.testTusk.controllers.LaptopsController.saveLaptop(LaptopsController.java:76)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"BCG0035YMN",
+"vendor":"HP",
+"price":22600.00,
+"quantity":15,
+"laptopSize":"13in"
+}
+}
+02-06-2023 20:52:33.733 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /laptops/1
+headers:
+request body:
+{
+"serialNumber": "81N0AG012344204C",
+"vendor": "ASUS",
+"price": 82600.00,
+"quantity": 5,
+"laptopSize": "17in" 
+}
+02-06-2023 20:52:33.777 INFO [http-nio-8080-exec-7] [ru.easybot.testTusk.controllers.LaptopsController.updateLaptopById(LaptopsController.java:100)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"81N0AG012344204C",
+"vendor":"ASUS",
+"price":82600.00,
+"quantity":5,
+"laptopSize":"17in"
+}
+}
+02-06-2023 20:52:39.867 INFO [http-nio-8080-exec-8] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /laptops/1
+headers:
+request body:
+nothing
+02-06-2023 20:52:39.872 INFO [http-nio-8080-exec-8] [ru.easybot.testTusk.controllers.LaptopsController.getLaptopById(LaptopsController.java:55)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"81N0AG012344204C",
+"vendor":"ASUS",
+"price":82600.00,
+"quantity":5,
+"laptopSize":"17in"
+}
+}
+02-06-2023 20:52:43.198 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /laptops/
+headers:
+request body:
+nothing
+02-06-2023 20:52:43.291 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.controllers.LaptopsController.getAllLaptops(LaptopsController.java:44)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":[
+{
+"id":1,
+"serialNumber":"81N0AG012344204C",
+"vendor":"ASUS",
+"price":82600.00,
+"quantity":5,
+"laptopSize":"17in"
+}
+]
+}
+02-06-2023 20:54:18.936 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /PCs/
+headers:
+request body:
+nothing
+02-06-2023 20:54:18.954 INFO [http-nio-8080-exec-2] [ru.easybot.testTusk.controllers.PCsController.getAllPCs(PCsController.java:44)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete, but result list of PCs is empty",
+"result":[
+
+]
+}
+02-06-2023 20:54:23.048 INFO [http-nio-8080-exec-3] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: GET
+path: /PCs/1
+headers:
+request body:
+nothing
+02-06-2023 20:54:23.053 ERROR [http-nio-8080-exec-3] [ru.easybot.testTusk.util.handlers.RestResponseEntityExceptionHandler.handleException(RestResponseEntityExceptionHandler.java:76)] - 
+response: {
+"status":"404 NOT_FOUND",
+"message":"PC with this id not represented in database yet",
+"result":{
+"exception":"PCNotFoundException",
+"line":"PCsServiceImpl: lambda$findPCById$0: 51"
+}
+}
+02-06-2023 20:57:42.725 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: POST
+path: /PCs/
+headers:
+request body:
+{
+"serialNumber": "eac292c4-016e-11ee-be56-0242ac120002",
+"vendor": "Intel",
+"price": 82600.00,
+"quantity": 2,
+"formFactor": "desktop" 
+}
+02-06-2023 20:57:42.740 INFO [http-nio-8080-exec-6] [ru.easybot.testTusk.controllers.PCsController.savePC(PCsController.java:76)] - 
+response: {
+"status":"201 CREATED",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"eac292c4-016e-11ee-be56-0242ac120002",
+"vendor":"Intel",
+"price":82600.00,
+"quantity":2,
+"formFactor":"desktop"
+}
+}
+02-06-2023 21:00:36.669 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.config.filters.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:40)] - 
+request:
+method: PATCH
+path: /PCs/1
+headers:
+request body:
+{
+"serialNumber": "3696b4fa-016f-11ee-be56-0242ac120002",
+"vendor": "Apple",
+"price": 164200.00,
+"quantity": 12,
+"formFactor": "monoblock" 
+}
+02-06-2023 21:00:36.676 INFO [http-nio-8080-exec-9] [ru.easybot.testTusk.controllers.PCsController.updatePCById(PCsController.java:100)] - 
+response: {
+"status":"200 OK",
+"message":"Operation complete",
+"result":{
+"id":1,
+"serialNumber":"3696b4fa-016f-11ee-be56-0242ac120002",
+"vendor":"Apple",
+"price":164200.00,
+"quantity":12,
+"formFactor":"monoblock"
+}
+}
